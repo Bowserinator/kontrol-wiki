@@ -1,0 +1,43 @@
+.wiki h2 {
+    margin-top: 1.5em;
+}
+
+.wiki h1, .wiki h2, .wiki h3, .wiki h4, .wiki h5 {
+    font-weight: bold;
+    color: #ddd;
+}
+
+.wiki {
+    color: #ccc;
+}
+
+/* Right column stuff */
+.wiki .float-right {
+    clear: right;
+    float: right;
+
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+/* Markdown generated tables */
+.wiki_table {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.wiki_table td,
+.wiki_table th {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.3rem 0.5rem;
+}
+
+.wiki_table th {
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.wiki_table code {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.1rem;
+}
