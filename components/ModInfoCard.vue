@@ -7,8 +7,11 @@
             padding: 8px
             ">
         <a-card-meta v-html="title" slot="title"></a-card-meta>
+
         <InfoTableBlock v-if="blockData" :data="blockData" />
-        
+    
+        <InfoTableItem v-if="itemData" :data="itemData" />
+
         <a-divider v-if="electricalData" style="height: 2px; margin: 12px 0" /> <!-- Weird firefox bug, won't render w/ 1px -->
         <InfoTableElectrical v-if="electricalData" :data="electricalData" />
     </a-card>
@@ -21,6 +24,9 @@ export default {
             type: String
         },
         blockData: {
+            type: Object
+        },
+        itemData: {
             type: Object
         },
         electricalData: {

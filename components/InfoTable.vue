@@ -18,7 +18,7 @@
 export default {
     computed: {
         array() {
-            return this.$props.listArray.map((x, i) => i % 2 == 0 ? `<b>${x}</b>` : `<span style="margin-left: 30px">${x}</span>`);
+            return this.$props.listArray.map((x, i) => i % 2 == 0 ? `<b>${x}</b>` : `<div style="margin-left: 30px">${x}</div>`);
         }
     },
 

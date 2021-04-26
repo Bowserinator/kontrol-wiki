@@ -64,8 +64,6 @@ The internal model depends on whether the port is set by the microcontroller as 
 | --- | --- | --- | --- |
 | Microcontroller Port | `kontrol:muc_port` | Block & Item | `block.kontrol.muc_port` |
 
-<br>
-
 ### Block states
 
 | Name | Default value | Allowed values | Description |
