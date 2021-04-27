@@ -1,6 +1,7 @@
 <template>
     <div>
         <v-runtime-template class="wiki" :template="text"/>
+        <Pages />
     </div>
 </template>
 
@@ -9,6 +10,7 @@
     import fs from "fs";
     import VRuntimeTemplate from "v-runtime-template";
     import { Remarkable } from 'remarkable';
+    import rkatex from 'remarkable-katex';
 
     const UNIQUE_SEPERATOR = '-=-|CONFIG_ABOVE|-=-';
 
@@ -19,6 +21,8 @@
         langPrefix: 'language-',
         typographer: false
     });
+
+    md.use(rkatex);
 
     // Fix for non-legal HTML tags like <a-table> in markdown
     md.core.ruler.push('html-components',  state => {

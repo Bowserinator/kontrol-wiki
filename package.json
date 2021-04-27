@@ -11,8 +11,10 @@
   "dependencies": {
     "ant-design-vue": "^1.7.4",
     "core-js": "^3.9.1",
+    "katex": "^0.13.3",
     "nuxt": "^2.15.3",
     "remarkable": "^2.0.1",
+    "remarkable-katex": "^1.1.7",
     "v-runtime-template": "^1.10.0"
   },
   "devDependencies": {

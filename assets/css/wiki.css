@@ -11,6 +11,7 @@
     color: #ccc;
 }
 
+
 /* Right column stuff */
 .wiki .float-right {
     clear: right;
@@ -41,4 +42,55 @@
 .wiki_table code {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0.1rem;
+}
+
+
+/* Bottom page table */
+.page-table {
+    width: 100%;
+    height: 1px; /* Part of height hack */
+}
+
+.page-table.top-level {
+    margin: 40px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2px;
+}
+
+.page-table .category {
+    background-color: #222;
+    text-align: right;
+    font-weight: bold;
+    padding: 0.15em 0.5rem 0.15rem 1rem;
+}
+
+.page-table .category-td {
+    max-width: 200px;
+    width: 1%;
+    padding: 2px;
+}
+
+.page-table > tr:nth-child(2n) { background-color: #101010; }
+.page-table > tr:nth-child(2n+1) { background-color: #171717; }
+
+.page-table th {
+    text-align: center;
+    background-color: #111;
+}
+
+.page-table td,
+.page-table th {
+    box-sizing: border-box;
+    padding: 0.2rem;
+}
+
+.page-table tr { height: 100%; }
+.page-table td { height: 100%; }
+.page-table td > div { height: 100%; }
+
+.page-table td > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }

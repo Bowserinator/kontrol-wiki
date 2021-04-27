@@ -49,7 +49,7 @@ such as wires will only return the absolute voltage at the center node.
 |**POWER**|Power dissipated by the component|
 |**POLARITY**|For polarized components, which side (N/S/W/E) is + / -|
 |**MISC**|Misc component-specific information|
-|**ABSOLUTE**|Absolute voltages of all internal nodes (creative only)|
+|**NODAL**|Absolute voltages of all nodes (creative only)|
 |**NAME**|Class name of component (creative only)|
 
 The different multimeters can measure the following:
@@ -80,5 +80,5 @@ The different multimeters can measure the following:
 ## Trivia
 
 - The basic multimeter is an analog multimeter
-- Unlike real digial multimeters, there's no ohmmeter function
+- Unlike many real digital multimeters, there's no ohmmeter function
 - Real multimeters require power and measure voltage differences across two points
