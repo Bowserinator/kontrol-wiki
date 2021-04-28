@@ -67,7 +67,17 @@ export default{
                             data: {
                                 type: 'links',
                                 links: [
+                                    '<PagesTableLink name="Port Connector" href="/blocks/microcontroller_port_connector" img="block/muc_port_connector.png" />',
                                     '<PagesTableLink name="Microcontroller Port" href="/blocks/microcontroller_port" img="block/muc_port.png" />',
+                                ]
+                            }
+                        },
+                        {
+                            category: 'Controllers',
+                            data: {
+                                type: 'links',
+                                links: [
+                                    '<PagesTableLink name="M8051F020 Core" href="/blocks/microcontroller_port" img="block/muc_port.png" />',
                                 ]
                             }
                         }
