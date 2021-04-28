@@ -39,9 +39,17 @@
     text-align: center;
 }
 
-.wiki_table code {
+.wiki_table code,
+.wiki > p > code {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0.1rem;
+}
+
+
+.wiki pre {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 

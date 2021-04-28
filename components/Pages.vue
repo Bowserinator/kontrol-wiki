@@ -61,7 +61,13 @@ export default{
                 },
                 {
                     category: 'Creative',
-                    data: '<p>lol</p>'
+                    data:  {
+                        type: 'links',
+                        links: [
+                            '<PagesTableLink name="Microcontroller Port Maker" href="/blocks/microcontroller_port_maker" img="block/muc_port_maker.png" />',
+                            '<PagesTableLink name="Microcontroller Maker" href="/blocks/microcontroller_maker" img="block/muc_maker.png" />'
+                        ]
+                    }
                 },
                 {
                     category: 'Items',
@@ -81,7 +87,13 @@ export default{
                 },
                 {
                     category: 'Development',
-                    data: '<p>lol</p>'
+                    data: {
+                        type: 'links',
+                        links: [
+                            '<PagesTableLink name="Virtual Circuits" href="/dev/virtual_circuits" />',
+                            '<PagesTableLink name="Thermal Simulation" href="/dev/virtual_circuits" />'
+                        ]
+                    }
                 }
             ]
         }

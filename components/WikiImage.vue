@@ -1,6 +1,6 @@
 <template>
     <div class="img-wrapper" v-bind:class="floatClass">
-        <img :src="src" :alt="caption">
+        <img :src="require('~/assets' + src)" :alt="caption">
         <span v-html="captionHTML"></span>
     </div>
 </template>

@@ -1,4 +1,5 @@
 {
+    "img": "item/multimeter.gif",
     "item": {
         "durability": "Basic: 8<br>Advanced: 16<br>Elite: 24<br>Ultimate: 40<br>Omni: ∞",
         "renewable": "<b>Omni:</b> No<br><b>Others:</b> Yes",

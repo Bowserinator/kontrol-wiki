@@ -1,5 +1,5 @@
 <template>
-    <a-card hoverable class="info-card-style float-right" headStyle="
+    <a-card class="info-card-style float-right" headStyle="
             background-color: #173742;
             font-size: 12pt;
             font-weight: bold"
@@ -7,6 +7,11 @@
             padding: 8px
             ">
         <a-card-meta v-html="title" slot="title"></a-card-meta>
+
+        <div v-if="img">
+            <img class="large-img" v-if="img" :src="require(`~/assets/texture/${img}`)">
+            <br><br>
+        </div>
 
         <InfoTableBlock v-if="blockData" :data="blockData" />
     
@@ -17,9 +22,24 @@
     </a-card>
 </template>
 
+<style scoped>
+.large-img {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.info-card-style {
+    width: 300px;
+}
+</style>
+
 <script>
 export default {
     props: {
+        img: {
+            type: String,
+            default: null
+        },
         title: {
             type: String
         },
@@ -35,9 +55,3 @@ export default {
     }
 };
 </script>
-
-<style scoped>
-.info-card-style {
-    width: 300px;
-}
-</style>

@@ -25,6 +25,8 @@
     md.use(rkatex);
 
     // Fix for non-legal HTML tags like <a-table> in markdown
+    // Based on code by Scott B Watt
+    // https://gitter.im/markdown-it/markdown-it?at=58407bb3444b3778767ecfe6
     md.core.ruler.push('html-components',  state => {
         for (const token of state.tokens) {
             if (!token.children) continue;
@@ -32,7 +34,7 @@
             token.children.forEach(child => {
                 if (child.type !== 'text')
                     return
-                const exp = /(<[A-Za-z0-9-_]+>)/g;
+                const exp = /(<[^>]+>)/g;
                 if (exp.test(child.content))
                     child.type = 'htmltag'
             });
@@ -41,6 +43,10 @@
 
     // Apply wiki_table class to all tables
     md.renderer.rules['table_open'] = () => '<table class="wiki_table">';
+
+    // Apply wiki_code_block rules
+    // md.renderer.rules['fence'] = () => '<table class="wiki_table">';
+    console.log(md.renderer.rules)
 
     export default {
         async asyncData({ params }) {
