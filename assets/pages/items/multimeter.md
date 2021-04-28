@@ -1,5 +1,14 @@
 {
-    "img": "item/multimeter.gif",
+    "img": {
+        "img": "item/multimeter.gif",
+        "small_images": [
+            "item/basic_multimeter.png",
+            "item/advanced_multimeter.png",
+            "item/elite_multimeter.png",
+            "item/ultimate_multimeter.png",
+            "item/omnimeter.png"
+        ]
+    },
     "item": {
         "durability": "Basic: 8<br>Advanced: 16<br>Elite: 24<br>Ultimate: 40<br>Omni: ∞",
         "renewable": "<b>Omni:</b> No<br><b>Others:</b> Yes",
@@ -12,7 +21,7 @@
 
 # Multimeter
 
-<ModInfoCard :itemData="item" :title="title" />
+<ModInfoCard :img="img" :itemData="item" :title="title" />
 
 
 ## Description

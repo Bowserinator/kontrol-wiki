@@ -9,8 +9,11 @@
         <a-card-meta v-html="title" slot="title"></a-card-meta>
 
         <div v-if="img">
-            <img class="large-img" v-if="img" :src="require(`~/assets/texture/${img}`)">
-            <br><br>
+            <img class="large-img" :src="imgMain">
+            <div style="text-align: center; margin-top: 15px">
+                <InvSlot :img="im" v-for="im, index in imgSub" v-bind:key="index" />
+            </div>
+            <br>
         </div>
 
         <InfoTableBlock v-if="blockData" :data="blockData" />
@@ -26,6 +29,7 @@
 .large-img {
     width: 50%;
     margin-left: 25%;
+    image-rendering: crisp-edges;
 }
 
 .info-card-style {
@@ -35,6 +39,22 @@
 
 <script>
 export default {
+    computed: {
+        // img can be:
+        // string for main image
+        // { img: "main image" }
+        // { img: "main image", "small_images": [...] }
+        imgMain() {
+            let img = this.$props.img;
+            if (img.img)
+                img = img.img;
+            return require(`~/assets/texture/${img}`);
+        },
+        imgSub() {
+            let img = this.$props.img;
+            return img.small_images || (img.img ? [img.img] : [img]);
+        }
+    },
     props: {
         img: {
             type: String,
