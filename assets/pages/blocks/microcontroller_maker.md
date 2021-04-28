@@ -43,8 +43,8 @@ A microcontroller maker can be used to generate pre-made microcontroller port te
 
 <WikiImage caption="Microcontroller Maker GUI" src="/img/muc_maker_gui.png" />
 
-When placed, right click the microcontroller make to open the GUI. The GUI opens only if the player is in Creative mode, and has the proper permissions. An outline will be 
-drawn in the world; this is the bounding box of the area the generated microcontroller.
+When placed, right click the microcontroller maker to open the GUI. The GUI opens only if the player is in Creative mode, and has the proper permissions. An outline will be 
+drawn in the world; this is the bounding box of the area of the generated microcontroller.
 
 A piston cannot move this block.
 
