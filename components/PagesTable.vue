@@ -44,7 +44,6 @@ export default {
     name: 'PagesTable',
     computed: {
         tableHTML() {
-            console.log(generateHTML(this.$props.data, true))
             return generateHTML(this.$props.data, true);
         }
     },

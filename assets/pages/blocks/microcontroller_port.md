@@ -1,4 +1,10 @@
 {
+    "img": {
+        "img": "block/muc_port.gif",
+        "small_images": [
+            "block/muc_port.png"
+        ]
+    },
     "block": {
         "renewable": true,
         "stackable": 64,
@@ -23,7 +29,7 @@
 
 # Microcontroller Port
 
-<ModInfoCard :blockData="block" :electricalData="electrical" :title="title" />
+<ModInfoCard :img="img" :blockData="block" :electricalData="electrical" :title="title" />
 
 
 ## Description
@@ -46,7 +52,7 @@ some code
 
 ## Circuit Model
 
-<WikiImage :float="false" caption="Internal circuit model" src="https://i.imgur.com/lxrxU8x.png" />
+<WikiImage :float="false" caption="Internal circuit model" src="/img/circuit/muc_port.png" />
 
 The internal model depends on whether the port is set by the microcontroller as "IN" or "OUT".
 

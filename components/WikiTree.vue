@@ -51,10 +51,6 @@
 
 <script>
 export default {
-    computed: {
-
-    },
-
     name: 'WikiTree',
     props: {
         data: {

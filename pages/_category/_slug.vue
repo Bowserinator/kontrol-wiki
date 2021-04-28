@@ -44,10 +44,6 @@
     // Apply wiki_table class to all tables
     md.renderer.rules['table_open'] = () => '<table class="wiki_table">';
 
-    // Apply wiki_code_block rules
-    // md.renderer.rules['fence'] = () => '<table class="wiki_table">';
-    console.log(md.renderer.rules)
-
     export default {
         async asyncData({ params }) {
             const slug = params.slug;
