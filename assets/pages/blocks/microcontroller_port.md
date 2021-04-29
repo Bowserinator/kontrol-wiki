@@ -22,7 +22,14 @@
         "thermalR": "0.0",
         "thermalC": "0.0"
     },
-    "title": "Microcontroller Port"
+    "title": "Microcontroller Port",
+    "block_entity_data": [
+        {
+            "icon": "nbt/int.png",
+            "title": "portId:",
+            "text": "Numeric id of the port"
+        }
+    ]
 }
 -=-|CONFIG_ABOVE|-=-
 
@@ -79,7 +86,8 @@ The internal model depends on whether the port is set by the microcontroller as 
 | `on` | `false` | `false`, `true` | Is port currently reading / writing `abs(V) > 0.1 V`? |
 
 
-## Trivia
+### Block data
 
+Microcontroller port stores additional data in the form of a block entity:
 
-TODO: [cateogires and more bocks]
+<WikiTree icon="nbt/compound.png" :data="block_entity_data" title="<b>Block entity data</b>" />
