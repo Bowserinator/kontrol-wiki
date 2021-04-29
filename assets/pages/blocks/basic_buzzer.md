@@ -1,4 +1,5 @@
 {
+    "img": "block/basic_buzzer.png",
     "block": {
         "renewable": true,
         "stackable": 64,
@@ -16,14 +17,21 @@
         "thermalR": "0.0",
         "thermalC": "0.0"
     },
-    "title": "Basic Buzzer"
+    "title": "Basic Buzzer",
+    "block_entity_data": [
+        {
+            "icon": "nbt/int.png",
+            "title": "tickCooldown:",
+            "text": "TODO"
+        }
+    ]
 }
 -=-|CONFIG_ABOVE|-=-
 
 
 # Basic Buzzer
 
-<ModInfoCard :blockData="block" :electricalData="electrical" :title="title" />
+<ModInfoCard :img="img" :blockData="block" :electricalData="electrical" :title="title" />
 
 
 ## Description
@@ -50,6 +58,15 @@ The basic buzzer is modelled internally as a 300 ohm resistor.
 | --- | --- | --- | --- |
 | Basic Buzzer | `kontrol:basic_buzzer` | Block & Item | `block.kontrol.basic_buzzer` |
 
+| Name | [Namespaced ID](https://minecraft.fandom.com/wiki/Namespaced_ID) |
+| --- | --- |
+| Block entity | `kontrol:buzzer_block` |
+
+### Block data
+
+Basic Buzzer stores additional data in the form of a block entity:
+
+<WikiTree icon="nbt/compound.png" :data="block_entity_data" title="<b>Block entity data</b>" />
 
 
 ## Trivia
