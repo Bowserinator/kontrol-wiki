@@ -11,6 +11,7 @@
     padding: 5px;
     width: 400px;
     box-sizing: content-box;
+    z-index: 9999;
 }
 
 .img-wrapper img {

@@ -34,6 +34,7 @@
 
 .info-card-style {
     width: 300px;
+    z-index: 999;
 }
 </style>
 
