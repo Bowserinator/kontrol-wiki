@@ -47,7 +47,13 @@ export default{
                         },
                         {
                             category: 'Switches',
-                            data: '<span>Hello</span>'
+                            data: {
+                                type: 'links',
+                                links: [
+                                    '<PagesTableLink name="Basic Switch" href="/blocks/basic_switch" img="block/basic_switch.png" />',
+                                    '<PagesTableLink name="Basic Push Button" href="/blocks/basic_push_button" img="block/basic_push_button.png" />',
+                                ]
+                            }
                         },
                         {
                             category: 'Diodes',
