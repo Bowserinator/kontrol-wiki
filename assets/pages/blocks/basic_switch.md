@@ -67,4 +67,4 @@ functions as a 1 GΩ resistor.
 
 Basic Switch stores additional data in the form of a block entity:
 
-<WikiTree icon="nbt/compound.png" :data="block_entity_data" title="<b>Block entity data</b>" />
+<WikiTree icon="nbt/compound.png" :data="block_entity_data" :inherit="['electricalBlockEntity']" title="<b>Block entity data</b>" />

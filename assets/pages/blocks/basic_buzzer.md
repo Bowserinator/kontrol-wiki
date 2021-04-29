@@ -66,7 +66,7 @@ The basic buzzer is modelled internally as a 300 ohm resistor.
 
 Basic Buzzer stores additional data in the form of a block entity:
 
-<WikiTree icon="nbt/compound.png" :data="block_entity_data" title="<b>Block entity data</b>" />
+<WikiTree icon="nbt/compound.png" :data="block_entity_data" :inherit="['electricalBlockEntity']" title="<b>Block entity data</b>" />
 
 
 ## Trivia

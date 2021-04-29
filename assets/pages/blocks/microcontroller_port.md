@@ -90,4 +90,4 @@ The internal model depends on whether the port is set by the microcontroller as 
 
 Microcontroller port stores additional data in the form of a block entity:
 
-<WikiTree icon="nbt/compound.png" :data="block_entity_data" title="<b>Block entity data</b>" />
+<WikiTree icon="nbt/compound.png" :data="block_entity_data" :inherit="['electricalBlockEntity']" title="<b>Block entity data</b>" />
