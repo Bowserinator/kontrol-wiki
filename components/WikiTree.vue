@@ -45,6 +45,7 @@
     position: relative;
     list-style: none;
     padding-left: 1em;
+    top: calc(0.75em - 1px);
 }
 
 /* The dash for the tree */

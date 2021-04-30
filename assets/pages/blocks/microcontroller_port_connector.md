@@ -27,7 +27,7 @@
 A connector for ports. Any connected adjacent ports will be considered part of the same "network", as in the connector can propogate the floodfill but does not have 
 any other function.
 
-TODO: SEE MAKING MUC NETWORK PAGE
+See the [microcontroller networks](/microcontroller/networks) page for usage information.
 
 
 ## Crafting Recipe

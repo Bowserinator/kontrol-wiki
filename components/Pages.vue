@@ -75,6 +75,7 @@ export default{
                                 links: [
                                     '<PagesTableLink name="Port Connector" href="/blocks/microcontroller_port_connector" img="block/muc_port_connector.png" />',
                                     '<PagesTableLink name="Microcontroller Port" href="/blocks/microcontroller_port" img="block/muc_port.png" />',
+                                    '<PagesTableLink name="BOG07 Redstone Port" href="/blocks/BOG07_muc_redstone_port" img="block/muc_redstone_port_1.png" />',
                                 ]
                             }
                         },
@@ -83,7 +84,7 @@ export default{
                             data: {
                                 type: 'links',
                                 links: [
-                                    '<PagesTableLink name="M8051F020 Core" href="/blocks/microcontroller_port" img="block/muc_port.png" />',
+                                    '<PagesTableLink name="M8051F020 Core" href="/blocks/m8051f020_core" img="block/c8051_core.png" />',
                                 ]
                             }
                         }

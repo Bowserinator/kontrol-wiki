@@ -43,11 +43,11 @@
 
 An interface for microcontrollers. Ports can connect on all sides (not diagonally) and be part of a microcontroller network. 
 
-TODO: SEE MAKING MUC NETWORK PAGE
-
 Ports will be gray when unconfigured, teal when set to read and red when set to output. Ports will light up when there is non-zero (|V| > 0.1 V) voltage input (for read) or output (for write).
 
 Ports can connect directly to any electrical block *except* for other microcontroller ports.
+
+See the [microcontroller networks](/microcontroller/networks) page for usage information.
 
 
 ## Crafting Recipe

@@ -39,6 +39,14 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
+  generate: {
+    routes: function () {
+      return [
+        '/blocks/basic_switch' // Any 1 block works, all links on bottom will be followed
+      ]
+    }
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extend(config, { isDev, isClient, loaders: { less } }) {
