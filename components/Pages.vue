@@ -72,7 +72,12 @@ export default{
                         },
                         {
                             category: 'Diodes',
-                            data: '<span>Hello</span>'
+                            data: {
+                                type: 'links',
+                                links: [
+                                    '<PagesTableLink name="Basic LED" href="/blocks/basic_led" img="block/basic_led.png" />'
+                                ]
+                            }
                         },
                         {
                             category: 'Scopes',
@@ -80,6 +85,15 @@ export default{
                                 type: 'links',
                                 links: [
                                     '<PagesTableLink name="Creative Scope" href="/blocks/creative_scope" img="block/creative_scope.png" />'
+                                ]
+                            }
+                        },
+                                                {
+                            category: 'Misc',
+                            data: {
+                                type: 'links',
+                                links: [
+                                    '<PagesTableLink name="Ground Node" href="/blocks/ground_node" img="block/ground.png" />'
                                 ]
                             }
                         }
