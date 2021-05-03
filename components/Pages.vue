@@ -29,21 +29,36 @@ export default{
                                 type: 'links',
                                 links: [
                                     '<PagesTableLink name="Basic cable" href="/" />',
-                                    'Creative cable'
+                                    'Creative Cable'
                                 ]
                             }
                         },
                         {
                             category: 'Resistors',
-                            data: '<span>Hello</span>'
+                            data: {
+                                type: 'links',
+                                links: [
+                                    '<PagesTableLink name="Creative Resistor" href="/blocks/creative_resistor" img="block/creative_resistor.png" />',
+                                ]
+                            }
                         },
                         {
                             category: 'Capacitors',
-                            data: '<span>Hello</span>'
+                            data: {
+                                type: 'links',
+                                links: [
+                                    '<PagesTableLink name="Creative Capacitor" href="/blocks/creative_capacitor" img="block/creative_capacitor.png" />',
+                                ]
+                            }
                         },
                         {
                             category: 'Inductors',
-                            data: '<span>Hello</span>'
+                            data: {
+                                type: 'links',
+                                links: [
+                                    '<PagesTableLink name="Creative Inductor" href="/blocks/creative_inductor" img="block/creative_inductor.png" />',
+                                ]
+                            }
                         },
                         {
                             category: 'Switches',
@@ -60,8 +75,13 @@ export default{
                             data: '<span>Hello</span>'
                         },
                         {
-                            category: 'Misc',
-                            data: '<span>Hello</span>'
+                            category: 'Scopes',
+                            data: {
+                                type: 'links',
+                                links: [
+                                    '<PagesTableLink name="Creative Scope" href="/blocks/creative_scope" img="block/creative_scope.png" />'
+                                ]
+                            }
                         }
                     ]
                 },
