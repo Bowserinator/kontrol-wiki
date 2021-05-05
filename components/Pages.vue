@@ -29,7 +29,7 @@ export default{
                                 type: 'links',
                                 links: [
                                     '<PagesTableLink name="Basic cable" href="/" />',
-                                    'Creative Cable'
+                                    '<PagesTableLink name="Creative Cable" href="/blocks/creative_cable" img="block/creative_cable.png" />',
                                 ]
                             }
                         },
