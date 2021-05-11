@@ -33,7 +33,7 @@ A creative tier cable, comes in 16 different colors. Functions as a true room te
 
 ## Usage
 
-The creative cable can be used as an ordinary cable. See [TODO CIRCUITS PAGE]
+The creative cable can be used as an ordinary cable. See [the circuits page](/circuits/circuits) for more info.
 
 ## Circuit Model
 

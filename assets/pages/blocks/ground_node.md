@@ -41,7 +41,7 @@ The Ground Node is interally modelled as a ground connected to 6 0.1 ohm resisto
 
 ## Usage
 
-The ground node is used to set a reference point for 0 V. See [TODO CIRCUITS PAGE]
+The ground node is used to set a reference point for 0 V. See [the circuits page](/circuits/circuits) for more info.
 
 
 ## Data Values

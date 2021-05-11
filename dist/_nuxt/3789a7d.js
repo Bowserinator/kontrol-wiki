@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{1284:function(t,e,n){"use strict";n.r(e);var l={props:{templateHtml:{templateHtml:!0,type:String}},created:function(){this.$options.template=this.templateHtml}},o=n(46),component=Object(o.a)(l,undefined,undefined,!1,null,null,null);e.default=component.exports}}]);
